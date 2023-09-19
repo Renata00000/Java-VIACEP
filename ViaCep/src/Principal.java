@@ -10,6 +10,7 @@ public class Principal {
         var uf = JOptionPane.showInputDialog("Digite a UF");
         var localidade = JOptionPane.showInputDialog("Digite a Localidade");
         var logradouro = JOptionPane.showInputDialog("Digite o Logradouro");
+        localidade = localidade.replace(" ", "%20");
 
         EnderecoForm enderecoForm = new EnderecoForm(uf,localidade,logradouro);
 
